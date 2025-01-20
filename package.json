@@ -1,6 +1,7 @@
 {
   "name": "my-personal-website",
   "version": "0.1.0",
+  "homepage": "https://erdogan98.github.io/my-personal-website",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
@@ -12,10 +13,10 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,7 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage": "https://erdogan98.github.io/my-personal-website"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
